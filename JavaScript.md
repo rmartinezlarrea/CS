@@ -26,5 +26,5 @@ Command tracert (in MS-DOS) www.casio.jp
 ## AJAX examples
 - AJAX 1 [Ajax.html](AJAX/Ajax.html)
 - Book list [book.html](AJAX/book.html)
-- Book form [book.html](AJAX/bookForm.html)
-- Book form [book.html](AJAX/bookForm.html)
+- Book form [bookForm.html](AJAX/bookForm.html)
+- Book form 2 [bookForm2.html](AJAX/bookForm2.html)
