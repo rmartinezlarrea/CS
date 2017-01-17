@@ -9,18 +9,14 @@
 - JSON
 
 ## Architecture Client - Server
-Architecture: <http://chimera.labs.oreilly.com/books/1234000000262/ch01.html#infrastructure-diagram>
-Process of rendering a Web page: <http://friendlybit.com/css/rendering-a-web-page-step-by-step/> (used in Startup Engineering of Coursera)
-Command tracert (in MS-DOS) www.casio.jp
+- Architecture: <http://chimera.labs.oreilly.com/books/1234000000262/ch01.html#infrastructure-diagram>
+- Process of rendering a Web page: <http://friendlybit.com/css/rendering-a-web-page-step-by-step/> (used in Startup Engineering of Coursera)
+- Command tracert (in MS-DOS) www.casio.jp
 
 ## User Interface
-[Video interfaces](https://youtu.be/M0IR40ud0jU?t=2m16s) to 3m0s
-Example of interface: drag and drop: <https://jqueryui.com/droppable/#default>
-(al objeto #draggable añadir las propiedades:
-- background-color: rgba(173, 255, 47, 0.2);
-- border-radius: 26px;
-- border-width: 5px;
-[Example of dynamic elements](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement2)
+- [Video interfaces](https://youtu.be/M0IR40ud0jU?t=2m16s) to 3m0s
+- Example of interface: drag and drop: <https://jqueryui.com/droppable/#default> al objeto #draggable añadir las propiedades: (background-color: rgba(173, 255, 47, 0.2); border-radius: 26px; border-width: 5px;)
+- [Example of dynamic elements](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement2)
 
 
 ## Examples
