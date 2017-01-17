@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  h1 {
+    width: 60%;
+    border: 1px solid #d4d4d4;
+    background-color: #F6F4F0;
+    color: #444444;
+    padding: 5px;
+    margin-left: -5%;
+}
+body {
+    margin-left: 10%;
+}
+  </style>
+  </head>
+  <body>
+    
+    <h1>Example 1</h1>
+    
+    <button  onclick="alert('Hello World in \nJavaScript alert window')">Call function
+    </button>
+    
+    <h1>Example 2</h1>
+    <script type="text/javascript">
+      document.write("Hello World from JavaScript!")
+    </script>
+    
+    <h1>Example 3</h1>
+    <h2>Show in an alert window the value of a field</h2>
+
+    <script type="text/javascript">
+      function myfunction(txt){
+        alert(txt)
+      }
+    </script>
+    <form name="form1">
+      <input name="entrada">
+      <input type="button" onclick="myfunction(form1.entrada.value)"value="Call function">
+    </form>
+    <p>By pressing the button, a function with an argument will be called. 
+    The function will alert this argument.
+    </p>
+
+    <h1>Example 4</h1>
+    <h2>Loop to write headings</h2>
+
+    <script type="text/javascript">
+      for (i = 1; i <= 6; i++){
+        document.write("<h" + i + ">Heading level " + i)
+        document.write("</h" + i + ">")
+      }
+    </script>
+
+    <h1>Example 5</h1>
+    <h2>Open a window</h2>
+
+    <script language=javascript>
+      function openwindow() {
+        m = window.open("http://www.tecnun.es", "new");
+      }
+      function closewindow() {
+        m.close()
+      }
+    </script>
+    <form>
+      <input type=button value="Open Window" onclick="openwindow()">
+      <input type=button value="Close Window" onclick="closewindow()">
+    </form>
+
+    <h1>Example 6</h1>
+    <h2>Form validation</h2>
+
+    <script type="text/javascript">
+      function validate(){
+        x=document.myForm
+        txt=x.myInput.value
+        if (txt>=1 && txt<=5){
+          return true
+        } else {
+          if (txt < 1) alert("It is less than 1, must be between 1 and 5")
+          else if (txt > 5) alert("It is greater than 5, must be between 1 and 5")
+          else alert("It is not valid, must be a number between 1 and 5")
+          return false
+        }
+      }
+    </script>
+    <form name="myForm" action="#" onSubmit="return validate()">
+      Enter a value from 1 to 5: <input type="text" name="myInput">
+      <input type="submit" value="Send input">
+    </form>
+    
+    
+    <h1>Example 7</h1>
+    
+    <button  onclick='    a=document.getElementsByTagName("h4")[0];
+      a.style.color="blue";
+      a.style.backgroundColor="red"'>Set red</button>
+    <button  onclick='document.getElementsByTagName("h4")[0].style.display="none";'>Hide</button>
+    <button  onclick='    a=document.getElementsByTagName("h4")[0].style.display="initial";'>Show</button>
+
+  </body>
+</html>
