@@ -4,7 +4,7 @@
 - Architecture Client - Server
 - Why JavasScript
 - JavaScript in Web Applications
-- How <script> tag, examples, tools, JQuery, jQuery ui, Bootstrap
+- How &lt;script&gt; tag, examples, tools, JQuery, jQuery ui, Bootstrap
 - Ajax
 - JSON
 
