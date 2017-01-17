@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Books API Example</title>
+  </head>
+  <script>
+    
+  function getData(ISBN) {    
+    var data ="";
+
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + ISBN, true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // Success!
+        resp = request.responseText;
+        data = JSON.parse(resp);
+        document.getElementById("title").value = data.items[0].volumeInfo.title;
+        document.getElementById("author").value = data.items[0].volumeInfo.authors[0];
+        document.getElementById("description").innerHTML = data.items[0].volumeInfo.description;
+        document.getElementById("image").src = data.items[0].volumeInfo.imageLinks.thumbnail;
+      } else {
+        // We reached our target server, but it returned an error
+      }
+    };
+
+    request.send();
+  }
+
+  </script>
+  <body>
+    <div id="content"></div>
+    <input id="ISBN" onBlur="getData(this.value)" value="9780324171884"></input>
+    <input id="title"></input>
+    <input id="author"></input>
+    <div id="description"></div>
+    <img id="image"/>
+    <button onclick="getData(document.getElementById('ISBN').value)">Get Data</button>
+  </body>
+</html>
