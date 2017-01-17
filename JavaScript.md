@@ -17,10 +17,12 @@ Command tracert (in MS-DOS) www.casio.jp
 - [basic example](JavaScript/basicJavascript.html)
 - [Examples 1](JavaScript/JavaScript1.html)
 - [Examples 2](JavaScript/JavaScript2.html)
-### Components
+
+## Components
 - Combo (select with input) [combo.html](JavaScript/components/combo.html)
 - Dialog with jQuery [dialog.html](JavaScript/components/dialog.html)
 - Dialog with JavaScript [dialog2.html](JavaScript/components/dialog2.html)
+
 ## AJAX examples
 - AJAX 1 [Ajax.html](AJAX/Ajax.html)
 - Book list [book.html](AJAX/book.html)
