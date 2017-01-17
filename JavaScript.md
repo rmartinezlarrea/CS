@@ -18,6 +18,22 @@
 - Example of interface: drag and drop: <https://jqueryui.com/droppable/#default> al objeto #draggable añadir las propiedades: (background-color: rgba(173, 255, 47, 0.2); border-radius: 26px; border-width: 5px;)
 - [Example of dynamic elements](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement2)
 
+## Examples of use of Javascript
+	* Calculator: http://www.calculator.net/scientific-calculator.html
+	* Google charts: https://developers.google.com/chart/interactive/docs/gallery/motionchart#Example
+	* Graphs: http://dygraphs.com/ Function Plotter: http://dygraphs.com/gallery/#g/plotter
+	* Lego builder: https://www.buildwithchrome.com/builder#
+	* TinyMCE: http://www.tinymce.com/tryit/inline.php
+	* SVG-Edit: http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html
+	* Wix: http://wix.com
+	* Doodle http://doodle.com/
+	* Example of processor simulator: http://dl.dropboxusercontent.com/u/17192680/Computer5i/c5i.html
+	* Nozbe (task manager) http://app.nozbe.com/#login
+	* Data Driven Documents http://d3js.org/
+
+Other examples:
+* http://www.drawastickman.com/
+* www.alsa.es -> http://www.kayak.es/
 
 ## Examples
 - [basic example](JavaScript/basicJavascript.html)
