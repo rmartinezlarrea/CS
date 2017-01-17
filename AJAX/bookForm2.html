@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Books API Example</title>
+  </head>
+  <script>
+    
+  function getData(ISBN) {    
+    var data ="";
+
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + ISBN, true);
+
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        // Success!
+        resp = request.responseText;
+        data = JSON.parse(resp);
+//        document.getElementById("title").value = data.items[0].volumeInfo.title;
+//        document.getElementById("author").value = data.items[0].volumeInfo.authors[0];
+//        document.getElementById("description").innerHTML = data.items[0].volumeInfo.description;
+//        document.getElementById("image").src = data.items[0].volumeInfo.imageLinks.thumbnail;
+
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        cell1.innerHTML = "<img class='image' src='" + data.items[0].volumeInfo.imageLinks.thumbnail + "' />";
+        cell2.innerHTML = data.items[0].volumeInfo.title;
+        cell3.innerHTML = data.items[0].volumeInfo.authors[0];
+        cell4.innerHTML = data.items[0].volumeInfo.publisher;
+        document.getElementById("ISBN").value = "";
+        document.getElementById("ISBN").focus();
+        } else {
+        // We reached our target server, but it returned an error
+      }
+    };
+
+    request.send();
+  }
+
+  </script>
+  <body>
+    <div id="content"></div>
+    <input id="ISBN" onChange="getData(this.value)" autofocus></input>
+    <button onclick="getData(document.getElementById('ISBN').value)">Get Data</button>
+    <button onclick="document.getElementById('ISBN').value=9780324171884">Set example</button>
+    <table id="myTable" border="1">
+  <tr>
+    <td>Cover</td>
+    <td>Title</td>
+    <td>Author</td>
+    <td>Publisher</td>
+  </tr>
+</table>
+
+<!--
+    <input id="title"></input>
+    <input id="author"></input>
+    <div id="description"></div>
+    <img id="image"/>
+-->
+  </body>
+</html>
