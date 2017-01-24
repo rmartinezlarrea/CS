@@ -50,3 +50,14 @@ Other examples:
 - Book list [book.html](AJAX/book.html)
 - Book form [bookForm.html](AJAX/bookForm.html)
 - Book form 2 [bookForm2.html](AJAX/bookForm2.html)
+
+## JSON
+
+## DOM Manipulation
+- Examples of book "JavaScript & JQuery : Interactive Front-end Web Development" By Jon Duckett [web](http://javascriptbook.com/) [code examples](http://javascriptbook.com/code/)
+  - <http://javascriptbook.com/code/c05/add-element.html>
+  - <http://javascriptbook.com/code/c05/example.html>
+  - <http://javascriptbook.com/code/c08/data-json.html> (Ajax)
+
+
+[Edit](https://github.com/nicolasserrano/CS/edit/master/JavaScript.md)
