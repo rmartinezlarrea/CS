@@ -19,17 +19,17 @@
 - [Example of dynamic elements](http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_document_createelement2)
 
 ## Examples of use of Javascript
-	* Calculator: http://www.calculator.net/scientific-calculator.html
-	* Google charts: https://developers.google.com/chart/interactive/docs/gallery/motionchart#Example
-	* Graphs: http://dygraphs.com/ Function Plotter: http://dygraphs.com/gallery/#g/plotter
-	* Lego builder: https://www.buildwithchrome.com/builder#
-	* TinyMCE: http://www.tinymce.com/tryit/inline.php
-	* SVG-Edit: http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html
-	* Wix: http://wix.com
-	* Doodle http://doodle.com/
-	* Example of processor simulator: http://dl.dropboxusercontent.com/u/17192680/Computer5i/c5i.html
-	* Nozbe (task manager) http://app.nozbe.com/#login
-	* Data Driven Documents http://d3js.org/
+	* [Calculator](http://www.calculator.net/scientific-calculator.html)
+	* [Google charts](https://developers.google.com/chart/interactive/docs/gallery/motionchart#Example)
+	* [Graphs](http://dygraphs.com/) [Function Plotter](http://dygraphs.com/gallery/#g/plotter)
+	* [Lego builder](https://www.buildwithchrome.com/builder#)
+	* [TinyMCE](http://www.tinymce.com/tryit/inline.php)
+	* [SVG-Edit](http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html)
+	* [Wix](http://wix.com)
+	* [Doodle](http://doodle.com/)
+	* [Example of processor simulator](https://nicolasserrano.github.io/c5i/c5i-ui.html)
+	* [Nozbe task manager](http://app.nozbe.com/#login)
+	* [Data Driven Documents](http://d3js.org/)
 
 Other examples:
 * http://www.drawastickman.com/
@@ -62,12 +62,7 @@ JSON.stringify(a)
 as=JSON.stringify(a)
 JSON.parse(as)
 ```
-Object {}
-55
-"{"b":55}"
-Object {b: 55}
-
-
+Result (as): "{"b":55}"
 - [Example of JSON with TED talks](http://www.ted.com/talks/subtitles/id/70/lang/en)
 
 ```
@@ -78,13 +73,13 @@ t2.captions
 for (x in t2.captions) { document.write(t2.captions[x].startTime + ":" + t2.captions[x].content ); document.write('<br>')}
 document.write("<table border=1>");for (x in t2.captions) { document.write("<tr><td>" + t2.captions[x].startTime + "</td><td>" + t2.captions[x].content + "</td></tr>")}
 ```
-### Clear screen:
+Clear screen:
 
 ```
 document.body.innerHTML
 ```
 
-## DOM Manipulation 2
+## DOM Manipulation
 - [Basic tutorial](http://callmenick.com/post/basics-javascript-dom-manipulation)
 - Examples of book "JavaScript & JQuery : Interactive Front-end Web Development" By Jon Duckett [web](http://javascriptbook.com/) [code examples](http://javascriptbook.com/code/)
   - [Update list](http://javascriptbook.com/code/c05/example.html)
