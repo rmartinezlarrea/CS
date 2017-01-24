@@ -52,12 +52,37 @@ Other examples:
 - Book form 2 [bookForm2.html](AJAX/bookForm2.html)
 
 ## JSON
+- JSON object
+- Open the console (F12) and try:
+```
+a={}
+Object {}
+a.b=55
+55
+JSON.stringify(a)
+"{"b":55}"
+as=JSON.stringify(a)
+"{"b":55}"
+JSON.parse(as)
+Object {b: 55}
+```
+- [Example of JSON with TED talks](http://www.ted.com/talks/subtitles/id/70/lang/en)
+```
+var t = document.body.innerText
+var t = document.body.innerText
+t2 = eval('(' + t + ')')
+t2.captions
+for (x in t2.captions) { document.write(t2.captions[x].startTime + ":" + t2.captions[x].content ); document.write('<br>')}
+document.write("<table border=1>");for (x in t2.captions) { document.write("<tr><td>" + t2.captions[x].startTime + "</td><td>" + t2.captions[x].content + "</td></tr>")}
+```
+<button onclick='document.body.innerHTML=""'></buttton>
 
 ## DOM Manipulation
+- [Basic tutorial](http://callmenick.com/post/basics-javascript-dom-manipulation)
 - Examples of book "JavaScript & JQuery : Interactive Front-end Web Development" By Jon Duckett [web](http://javascriptbook.com/) [code examples](http://javascriptbook.com/code/)
-  - <http://javascriptbook.com/code/c05/add-element.html>
-  - <http://javascriptbook.com/code/c05/example.html>
-  - <http://javascriptbook.com/code/c08/data-json.html> (Ajax)
+  - [Update list](http://javascriptbook.com/code/c05/example.html)
+  - [JSON data with Ajax](http://javascriptbook.com/code/c08/data-json.html)
+- [Reference from mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
-
+---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/JavaScript.md)
