@@ -54,6 +54,7 @@ Other examples:
 ## JSON
 - JSON object
 - Open the console (F12) and try:
+
 ```
 a={}
 Object {}
@@ -66,7 +67,9 @@ as=JSON.stringify(a)
 JSON.parse(as)
 Object {b: 55}
 ```
+
 - [Example of JSON with TED talks](http://www.ted.com/talks/subtitles/id/70/lang/en)
+
 ```
 var t = document.body.innerText
 var t = document.body.innerText
@@ -75,9 +78,10 @@ t2.captions
 for (x in t2.captions) { document.write(t2.captions[x].startTime + ":" + t2.captions[x].content ); document.write('<br>')}
 document.write("<table border=1>");for (x in t2.captions) { document.write("<tr><td>" + t2.captions[x].startTime + "</td><td>" + t2.captions[x].content + "</td></tr>")}
 ```
-<button onclick='document.body.innerHTML=""'></buttton>
 
-## DOM Manipulation
+<button onclick='document.body.innerHTML=""'/>
+
+## DOM Manipulation 2
 - [Basic tutorial](http://callmenick.com/post/basics-javascript-dom-manipulation)
 - Examples of book "JavaScript & JQuery : Interactive Front-end Web Development" By Jon Duckett [web](http://javascriptbook.com/) [code examples](http://javascriptbook.com/code/)
   - [Update list](http://javascriptbook.com/code/c05/example.html)
