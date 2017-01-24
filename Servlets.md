@@ -3,8 +3,8 @@
 ## Servlets
 
 ## Http request:
-- enter a URL, click a link, submit a form or any event in the broswer: example: <www.amazon.com>
-- crete the HTTP request: Developer tool -> Network, click on <www.amazon.com>, see Headers, Request header.
+- enter a URL, click a link, submit a form or any event in the broswer: example: <http://www.amazon.com>
+- crete the HTTP request: Developer tool -> Network, click on <http://www.amazon.com>, see Headers, Request header.
 - IP number of the address (ping in CommandPrompt  ping www.casio.jp)
 - connection to the server (tracert in CommandPrompt:   tracert www.casio.jp)
 - process in the server: web -> application -> thread -> process & DDBB -> application -> web
