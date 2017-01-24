@@ -57,16 +57,16 @@ Other examples:
 
 ```
 a={}
-Object {}
 a.b=55
-55
 JSON.stringify(a)
-"{"b":55}"
 as=JSON.stringify(a)
-"{"b":55}"
 JSON.parse(as)
-Object {b: 55}
 ```
+Object {}
+55
+"{"b":55}"
+Object {b: 55}
+
 
 - [Example of JSON with TED talks](http://www.ted.com/talks/subtitles/id/70/lang/en)
 
@@ -78,8 +78,11 @@ t2.captions
 for (x in t2.captions) { document.write(t2.captions[x].startTime + ":" + t2.captions[x].content ); document.write('<br>')}
 document.write("<table border=1>");for (x in t2.captions) { document.write("<tr><td>" + t2.captions[x].startTime + "</td><td>" + t2.captions[x].content + "</td></tr>")}
 ```
+### Clear screen:
 
-<button onclick='document.body.innerHTML=""'/>
+```
+document.body.innerHTML
+```
 
 ## DOM Manipulation 2
 - [Basic tutorial](http://callmenick.com/post/basics-javascript-dom-manipulation)
