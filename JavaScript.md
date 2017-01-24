@@ -69,7 +69,6 @@ Result (as): "{"b":55}"
 
 ```
 var t = document.body.innerText
-var t = document.body.innerText
 t2 = eval('(' + t + ')')
 t2.captions
 for (x in t2.captions) { document.write(t2.captions[x].startTime + ":" + t2.captions[x].content ); document.write('<br>')}
