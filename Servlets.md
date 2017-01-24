@@ -5,6 +5,14 @@
 ## Http request:
 - enter a URL, click a link, submit a form or any event in the broswer: example: <http://www.amazon.com>
 - crete the HTTP request: Developer tool -> Network, click on <http://www.amazon.com>, see Headers, Request header.
+  - Search for amazon. Open a cookie.
+  - Remove all shown
+  - New request (F%) to www.amazon.com with "Developer tool -> Network" open
+    - See Request (no cookies)
+    - See Response (new cookies)
+  - Second request to amazon (F5):
+    - See Request (the previous cookies)
+    - See Response (no cookies)
 - IP number of the address (ping in CommandPrompt  ping www.casio.jp)
 - connection to the server (tracert in CommandPrompt:   tracert www.casio.jp)
 - process in the server: web -> application -> thread -> process & DDBB -> application -> web
