@@ -87,6 +87,10 @@ document.body.innerHTML
   - [JSON data with Ajax](http://javascriptbook.com/code/c08/data-json.html)
 - [Reference from mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
+## Resouces
+- [Beginner tutorials](http://elijahmanor.com/beginner-html5-javascript-jquery-backbone-and-css3-resources/)
+- [Add target](http://stackoverflow.com/questions/6822945/add-target-blank-to-link-with-javascript)
+
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/JavaScript.md)
 <style>
