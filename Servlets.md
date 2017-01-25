@@ -40,3 +40,8 @@
     
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/Servlets.md)
+<style>
+div.container ul, div.container ol {
+    padding-left: 1.4em;
+}
+</style>
