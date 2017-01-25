@@ -89,3 +89,8 @@ document.body.innerHTML
 
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/JavaScript.md)
+<style>
+div.container ul, div.container ol {
+    padding-left: 1.4em;
+}
+</style>
