@@ -37,6 +37,7 @@
   - [HttpSession](http://docs.oracle.com/javaee/5/api/index.html?javax/servlet/http/HttpSession.html)
     - [getAttribute(String name)](http://docs.oracle.com/javaee/5/api/javax/servlet/http/HttpSession.html#getAttribute(java.lang.String))
     - [setAttribute(String name, Object value)](http://docs.oracle.com/javaee/5/api/javax/servlet/http/HttpSession.html#setAttribute(java.lang.String, java.lang.Object))
+- [Example of servlets](http://www.tecnun.es/asignaturas/Informat2/Material/Libro/sesiones.zip)
     
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/Servlets.md)
