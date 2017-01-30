@@ -50,7 +50,12 @@ java PrimerPrograma
 ```
 Primer programa de Infor 2
 ```
-   
+
+## Recursos
+
+- [Java tutor](http://www.pythontutor.com/java.html#mode=edit)
+- [DrJava](http://www.drjava.org/)
+
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/JDK.md)
 <style>
