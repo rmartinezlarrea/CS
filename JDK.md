@@ -1,6 +1,6 @@
 # Java
 
-## JDK, primer programa
+## JDK, primer programa.
 Para escribir, compilar y ejecutar el primer programa en Java, se deben seguir los siguientes pasos, la explicación de los mismos se encuentra en el aparado 1.4.1 del libro:
 
 1. Con un editor de texto (Notepad++, Crimson, EditPlus, Notepad, …) escribir el siguiente texto en un fichero. Se deben respetar las minúsculas y mayúsculas.
