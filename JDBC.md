@@ -1,23 +1,35 @@
 # JDBC
 
-## JDBC architecture
+## Printer manager
+Menu -> Print -> Print using system dialog...
+- Application
+- Printer manager
+- Printer driver
+- Printer
+
+## ODBC (Open Database Connectivity)
+ODBC is an API for accessing DBMS (Database Management Systems)
+- Application
+- ODBC driver manager
+- ODBC driver
+- DBMS
+
 Example with DB2 (IBM): <http://os2ports.os2site.com/docs/db2/db2l0/db2l0244.htm#FIGFGINTA>
 
 Other examples of using ODBC: 
 http://docs.oracle.com/cd/E16655_01/appdev.121/e17620/adfns_odbc.htm#ADFNS1115
 Windows odbc manager: odbcad32
+   
+## JDBC architecture
 
 Laboratory practice: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica4.pdf>
--JDBC
 
 Oracle tutorial:  <http://docs.oracle.com/javase/tutorial/jdbc/overview/index.html>
 
-
-
-Examples: ( link)
-basicJDBC.java
-ExecuteSQL.java
-firstJDBC.java
+Examples:
+[basicJDBC.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/basicJDBC.html)
+[ExecuteSQL.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/ExecuteSQL.html)
+[firstJDBC.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/firstJDBC.html)
 
 ### File ResultAppSQL.java
 
