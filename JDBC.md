@@ -2,6 +2,7 @@
 
 ## Printer manager
 Menu -> Print -> Print using system dialog...
+
 - Application
 - Printer manager
 - Printer driver
@@ -9,16 +10,17 @@ Menu -> Print -> Print using system dialog...
 
 ## ODBC (Open Database Connectivity)
 ODBC is an API for accessing DBMS (Database Management Systems)
+
 - Application
 - ODBC driver manager
 - ODBC driver
 - DBMS
 
 Example with DB2 (IBM): <http://os2ports.os2site.com/docs/db2/db2l0/db2l0244.htm#FIGFGINTA>
+Other examples of using ODBC: <http://docs.oracle.com/cd/E16655_01/appdev.121/e17620/adfns_odbc.htm#ADFNS1115>
 
-Other examples of using ODBC: 
-http://docs.oracle.com/cd/E16655_01/appdev.121/e17620/adfns_odbc.htm#ADFNS1115
 Windows odbc manager: odbcad32
+With Windows 64 bits: C:\Windows\System32\odbcad32.exe
    
 ## JDBC architecture
 
