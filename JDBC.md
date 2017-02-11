@@ -20,8 +20,8 @@ Example with DB2 (IBM): <http://os2ports.os2site.com/docs/db2/db2l0/db2l0244.htm
 Other examples of using ODBC: <http://docs.oracle.com/cd/E16655_01/appdev.121/e17620/adfns_odbc.htm#ADFNS1115>
 
 Windows odbc manager: odbcad32  
-With Windows 64 bits: C:\Windows\System32\odbcad32.exe  
-With Windows 64 bits: C:\Windows\SysWOW64\odbcad32.exe  
+With Windows 64 bits: C:\Windows\System32\odbcad32.exe (yes, System32 is for 64 bits systems)  
+With Windows 32 bits: C:\Windows\SysWOW64\odbcad32.exe (WOW64 means Windows on Windows 64, so it's for 32 bits systems)  
    
 ## JDBC architecture  
 Laboratory practice: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica4.pdf>
@@ -53,6 +53,7 @@ class basicJDBC {
 }
 ```
 
+[Accsess mdb file](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)  
 ODBC driver in JDBC:
 java firstJDBC "Driver={Microsoft Access Driver (*.mdb)};Dbq=Libros.mdb" "Select * from datos" autor titulo
 
