@@ -53,7 +53,7 @@ class basicJDBC {
 }
 ```
 
-[Accsess mdb file](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)  
+[Access mdb file](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)  
 ODBC driver in JDBC:
 java firstJDBC "Driver={Microsoft Access Driver (*.mdb)};Dbq=Libros.mdb" "Select * from datos" autor titulo
 
@@ -66,3 +66,11 @@ Lab: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica
 [API java.sql](http://docs.oracle.com/javase/6/docs/api/index.html?java/sql/package-summary.html)
 
 [PreparedStatement](http://svn.apache.org/repos/asf/db/derby/code/trunk/java/demo/toursdb/insertMaps.java)
+
+---
+[Edit](https://github.com/nicolasserrano/CS/edit/master/JDBC.md)
+<style>
+div.container ul, div.container ol {
+    padding-left: 1.4em;
+}
+</style>
