@@ -29,10 +29,10 @@ Laboratory practice: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/
 Oracle tutorial:  <http://docs.oracle.com/javase/tutorial/jdbc/overview/index.html>
 
 Examples:
-[basicJDBC.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/basicJDBC.html)
-[ExecuteSQL.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/ExecuteSQL.html)
-[firstJDBC.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/firstJDBC.html)
-[ResultAppSQL.java](https://dl.dropboxusercontent.com/u/17192680/Tecnun/asignaturas/SoftEng/ResultAppSQL.html)
+- [basicJDBC.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/basicJDBC.java)  
+- [ExecuteSQL.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ExecuteSQL.java)
+- [firstJDBC.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/firstJDBC.java)
+- [ResultAppSQL.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ResultAppSQL.java)
 
 ### File ResultAppSQL.java
 
