@@ -63,8 +63,9 @@ Lab: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica
 
 ## JDBC and Servlets  
 
-### Servlet structure with JDBC (methods init and doGet)
-Example: <http://www4.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica9.pdf>
+### Servlet structure with JDBC (methods init and doGet)  
+- [Presentation](https://www.dropbox.com/s/kbrt9acq38m8py8/ServletsDB.ppt?dl=0), and [example](http://www4.tecnun.es/asignaturas/Informat3/Apoyo_Clases/Ejemplos_Servlets_JDBC/Ejemplo2.html)
+- Example: <http://www4.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica9.pdf>
 
 ### API java.sql  
 [API java.sql](http://docs.oracle.com/javase/6/docs/api/index.html?java/sql/package-summary.html)
