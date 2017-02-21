@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="http://dygraphs.com/dygraph.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script>
+   $(document).ready(function () {
+      var g = null;
+      var plot;  // defined below
+      var select = document.getElementById("presets");
+      var presets = {
+        'id': [ -10, 10, 'function(x) {\n  return x;\n}' ],
+        'sine': [ -10, 10, 'function(x) {\n  return Math.sin(x);\n}' ],
+        'taylor': [ -3, 3, 'function(x) {\n  return [Math.cos(x), 1 - x*x/2 + x*x*x*x/24];\n}' ],
+        'sawtooth': [-10, 10, 'function(x) {\n  var y = 0;\n  for (var i = 1; i < 20; i+=2) {\n    y += Math.sin(i * x)/i;\n  }\n  var final = 1 - 2*(Math.abs(Math.floor(x / Math.PI)) % 2);\n  return [4/Math.PI * y, final];\n}' ]
+      };
+      select.onchange = function() {
+        var sel = select.selectedIndex;
+        var id = select.options[sel].id;
+
+        if (id == "custom") { return; }
+        document.getElementById("x1").value = presets[id][0];
+        document.getElementById("x2").value = presets[id][1];
+        document.getElementById("eq").value = presets[id][2];
+        plot();
+      };
+
+      var plotButton = document.getElementById("plot");
+      plot = function() {
+        g = null;  // reset
+        var eq = document.getElementById("eq").value;
+        eval("fn = " + eq);
+
+        var s = document.getElementById("s");
+        var graph = document.getElementById("graph_div");
+        var width = parseInt(graph.style.width, 10);
+        var x1 = parseFloat(document.getElementById("x1").value);
+        var x2 = parseFloat(document.getElementById("x2").value);
+        var xs = 1.0 * (x2 - x1) / width;
+
+        var data = [];
+        for (var i = 0; i < width; i++) {
+          var x = x1 + i * xs;
+          var y = fn(x);
+          var row = [x];
+          if (y.length > 0) {
+            for (var j = 0; j < y.length; j++) {
+              row.push(y[j]);
+            }
+          } else {
+            row.push(y);
+          }
+          data.push(row);
+        }
+
+        g = new Dygraph(graph, data, {
+            clickCallback: function(e, x, pts) {  newton(x) },
+            underlayCallback: drawLines,
+            drawAxesAtZero: true,
+            strokeWidth: 1.0
+        });
+      };
+      plotButton.onclick = plot;
+      plot();
+
+      var xClicked;
+
+      function newton(x) {
+        xClicked = x;
+        var s = document.getElementById("s");
+        s.innerHTML = "<b>Click</b> " + "x coord: " + x 
+        g.updateOptions({});  
+      }
+
+      function drawLines(ctx, area, layout) {
+        if (g == null) return;  // won't be set on the initial draw.
+
+        ctx.save();
+        ctx.strokeStyle = "#FF0000";
+        ctx.lineWidth = 1.0;
+        var stepsStr = parseFloat(document.getElementById("steps").value);
+        steps = parseInt(stepsStr);
+          
+        x0 = xClicked;
+        for (i=1; i<= steps; i++){
+          draw2Lines(ctx, x0);
+          x1 = fx1(x0);
+          x0 = x1
+        }
+      }
+
+      function draw2Lines(ctx, x) {
+        y0 = fx(x);
+        drawLine(ctx, x, 0, x, y0);
+        drawLine(ctx, x, y0, fx1(x), 0);
+      }      
+
+      function fdx(x) {
+        dh = 0.0001;
+        y = (fx(x + dh) - fx(x)) / dh;
+        return y;
+      }
+
+      function fx1(x0) {
+        x1 = x0 - fx(x0) / fdx(x0);
+        return x1;
+      }
+
+      function fx(x) {
+        var eq = document.getElementById("eq").value;
+        eval("fn = " + eq);
+        fy = fn(x);
+        if (fy.length > 0) {
+          y0 = fy[0];
+        } else {
+          y0 = fy;
+        }
+        return y0;
+      }
+      
+      function drawLine(ctx, x0, y0, x1, y1) {
+        ctx.beginPath();
+        var p1 = g.toDomCoords(x0, y0);
+        var p2 = g.toDomCoords(x1, y1);
+        ctx.moveTo(p1[0], p1[1]);
+        ctx.lineTo(p2[0], p2[1]);
+        ctx.closePath();
+        ctx.stroke();
+      }
+
+    }
+);
+</script>
+</head>
+<body>
+
+<p><b>Equation: </b><br>
+<textarea cols="80" rows="10" id="eq">function(x) {
+  return [0.1 * x, 0.1 * x + Math.sin(x), 0.1*x + Math.cos(x)];
+}</textarea><br>
+<b>Preset functions:</b> <select id="presets">
+<option selected="" id="custom">(custom)</option>
+<option id="id">Identity</option>
+<option id="sine">Sine Wave</option>
+<option id="taylor">Taylor series</option>
+<option id="sawtooth">Sawtooth</option>
+</select>
+</p>
+<div id="s">Click</div>
+<p><b>x range: </b> <input type="text" width="5" id="x1" value="-10">
+to <input type="text" width="5" id="x2" value="10"></p>
+<p><button id="plot">Plot</button> steps <input type="text" width="2" id="steps" value="1"></p>
+
+<div id="graph_div" style="width:600px; height:300px;"></div>
+
+  </body>
+</html>
