@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+document.childNodes[0].appendChild(document.createElement("body"))
+canvas = document.createElement("canvas");
+canvas.width=360
+canvas.height=200
+document.body.appendChild(canvas);
+var ctx=canvas.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(0,100);
+for (i=0; i< 360; i++) {
+  ctx.lineTo(i,Math.sin(i*Math.PI/180.)*100+100);
+}
+ctx.stroke();
+</script>
+</head>
+</html>
