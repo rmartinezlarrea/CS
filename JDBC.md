@@ -125,6 +125,10 @@ url:  jdbc:derby://localhost:1527/d:/folderpath//Java/ClientDB;create=true
 ## Uses of data  
 
 ### JS charts and graphs  
+Drawing with JavaScript in a canvas [example canvas](JavaScript/graphics/canvas.html)
+Using Dygraph library [example dygraph](JavaScript/graphics/newton.html)
+[Google charts](https://developers.google.com/chart/interactive/docs/gallery)
+[Raphael JS](http://dmitrybaranovskiy.github.io/raphael/)
 
 ### SOA (Service Oriented Architecture)
 
