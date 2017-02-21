@@ -30,9 +30,7 @@ Oracle tutorial:  <http://docs.oracle.com/javase/tutorial/jdbc/overview/index.ht
 
 Examples:
 - [basicJDBC.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/basicJDBC.java)  
-- [ExecuteSQL.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ExecuteSQL.java)
 - [firstJDBC.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/firstJDBC.java)
-- [ResultAppSQL.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ResultAppSQL.java)
 
 ### File ResultAppSQL.java
 
@@ -55,8 +53,10 @@ class basicJDBC {
 
 [Access mdb file](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)  
 
-More examples: firstJDBC, ResultAppSQL  file firstJDBC(1).java
-Lab sessions: books.mdb  Lab-DDBB Lab-JDBC
+Lab sessions:
+- [Data base (books.mdb)](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)
+- [Lab-DDBB](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886759_1/xid-886759_1)
+- [Lab-JDBC](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886760_1/xid-886760_1)
 JDBC  Files Wildcard characters in MS Access
 
 Lab: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica5.pdf>
@@ -70,7 +70,8 @@ Example: <http://www4.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Pra
 [API java.sql](http://docs.oracle.com/javase/6/docs/api/index.html?java/sql/package-summary.html)
 
 ### Metadate  
-[ResultAppSQL](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ResultAppSQL.java)
+- [ResultAppSQL](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ResultAppSQL.java)
+- [ExecuteSQL.java](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ExecuteSQL.java)
 
 ###   jdbc:odbc without DSN
 ODBC driver in JDBC:
