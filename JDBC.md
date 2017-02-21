@@ -54,8 +54,6 @@ class basicJDBC {
 ```
 
 [Access mdb file](https://aula-virtual.unav.edu/bbcswebdav/pid-427603-dt-content-rid-886758_1/xid-886758_1)  
-ODBC driver in JDBC:
-java firstJDBC "Driver={Microsoft Access Driver (*.mdb)};Dbq=Libros.mdb" "Select * from datos" autor titulo
 
 More examples: firstJDBC, ResultAppSQL  file firstJDBC(1).java
 Lab sessions: books.mdb  Lab-DDBB Lab-JDBC
@@ -63,9 +61,73 @@ JDBC  Files Wildcard characters in MS Access
 
 Lab: <http://www.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica5.pdf>
 
+## JDBC and Servlets  
+
+### Servlet structure with JDBC (methods init and doGet)
+Example: <http://www4.tecnun.es/asignaturas/Informat2/Material/Libro/IngSoft/Practica9.pdf>
+
+### API java.sql  
 [API java.sql](http://docs.oracle.com/javase/6/docs/api/index.html?java/sql/package-summary.html)
 
+### Metadate  
+[ResultAppSQL](https://github.com/nicolasserrano/CS/blob/master/Java/JDBC/ResultAppSQL.java)
+
+###   jdbc:odbc without DSN
+ODBC driver in JDBC:
+java firstJDBC "Driver={Microsoft Access Driver (*.mdb)};Dbq=Libros.mdb" "Select * from datos" autor titulo
+
+### PreparedStatement  
 [PreparedStatement](http://svn.apache.org/repos/asf/db/derby/code/trunk/java/demo/toursdb/insertMaps.java)
+
+### Derby  
+```
+F:\Java\db-derby-10.9.1.0-bin iniciar.bat
+F:
+SET JAVA_PC=F:\Java
+SET JAVA_HOME=%JAVA_PC%\jdk1.6.0_04
+SET PATH=%JAVA_HOME%\bin;%PATH%
+set install=%JAVA_PC%\db-derby-10.9.1.0-bin
+set classpath=%install%\lib\derbytools.jar;%install%\lib\derby.jar;%install%
+cd %install%\demo\programs
+java org.apache.derby.tools.ij
+
+Para crear la base de datos Derby:
+CONNECT 'jdbc:derby:firstdb;create=true';
+
+Comandos:
+ij> connect 'jdbc:derby:dbdetective';
+ij> show tables;
+ij> select * from user1.employee where Last_name like 'T%';
+```
+
+### Squirrel  
+```
+set path=C:\Java\Squirrel-sql-2.6.5a;%path%
+squirrel-sql.bat
+```
+
+### Derby in server mode  
+set the driver with file: derbynet.jar in CLASSPATH:
+```
+     set classpath=F:\Java\db-derby-10.9.1.0-bin\lib\derbynet.jar;%classpath%
+```
+start the server
+```
+java org.apache.derby.drda.NetworkServerControl start
+```
+Explianed in http://db.apache.org/derby/integrate/SQuirreL_Derby.html
+
+Example of Squirrel with DerbyNet (server mode):
+url:  jdbc:derby://localhost:1527/d:/folderpath//Java/ClientDB;create=true
+
+## Uses of data  
+
+### JS charts and graphs  
+
+### SOA (Service Oriented Architecture)
+
+### Server Sent Events
+
 
 ---
 [Edit](https://github.com/nicolasserrano/CS/edit/master/JDBC.md)
