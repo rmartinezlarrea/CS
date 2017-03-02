@@ -128,7 +128,7 @@ url:  jdbc:derby://localhost:1527/d:/folderpath//Java/ClientDB;create=true
 - Drawing with JavaScript in a canvas [run](https://nicolasserrano.github.io/CS/JavaScript/graphics/canvas.html) [source](JavaScript/graphics/canvas.html)
 - Using Dygraph library [run](https://nicolasserrano.github.io/CS/JavaScript/graphics/newton.html) [source](JavaScript/graphics/newton.html)
 - [Google charts](https://developers.google.com/chart/interactive/docs/gallery) [example in SMR](http://smr-project-test.appspot.com/UserPage?PageKey=5677751478517760)
-- [Raphael JS](http://dmitrybaranovskiy.github.io/raphael/)
+- [Raphael JS](http://dmitrybaranovskiy.github.io/raphael/) [Basic example](https://nicolasserrano.github.io/CS/JavaScript/graphics/basicRaphael.html)
 
 ### SOA (Service Oriented Architecture)
 
